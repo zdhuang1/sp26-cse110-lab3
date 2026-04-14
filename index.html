@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meeting Notes: The Daily Grind Coffee App</title>
+</head>
+<body>
+
+    <header>
+        <h1>Kickoff Meeting: "The Daily Grind" Coffee Shop</h1>
+        <img src="screenshots/coffee_shop.jpg" alt="Espresso pouring into a coffee cup">
+        <nav>
+            <ul>
+                <li><a href="#details">Meeting Details</a></li>
+                <li><a href="#agenda">Agenda & Notes</a></li>
+                <li><a href="#action-items">Action Items Form</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+        <section id="details">
+            <h2>Meeting Details</h2>
+            <p><strong>Date:</strong> October 24, 2026</p>
+            <p><strong>Location:</strong> <em>Virtual - Zoom Room A </em></p>
+            <p><strong>Attendees:</strong> Sarah (Project Manager), Dev (Lead Engineer), Maya (UI/UX Design), Tom (Coffee Shop Owner)</p>            
+            <details>
+                <summary>View Project Scope (Click to Expand)</summary>
+                <p>The client needs a unified Point of Sale (POS) system and a customer-facing mobile application for order-ahead functionality and loyalty rewards.</p>            </details>
+        </section>
+
+        <section id="agenda">
+            <h3>Agenda</h3>
+            <ol>
+                <li>Client introductions and visions.</li>
+                <li>Review the iPads they use at the shop.</li>
+                <li>Figure out loyalty program.</li>
+                <li>Next steps and passing out the homework.</li>
+            </ol>
+
+            <h3>Discussion Notes</h3>
+            <p>Tom stressed that the morning rush is chaotic. The app needs to be incredibly fast so customers don't get grumpy trying to get their coffee.</p>
+            <ul>
+                <li><strong>Hardware:</strong> They will be using standard 10-inch tablets at the checkout counters.</li>
+                <li><strong>Modifications:</strong> The system must handle complex drink modifications (e.g., half-caf, oat milk, exactly 2.5 pumps of sugar-free vanilla).</li>
+                <li><strong>Offline Mode:</strong> Crucial for when the shop's Wi-Fi inevitably decides to shutdown.</li>
+            </ul>
+
+            <h3>Meeting Recording</h3>
+            <p>Listen to the audio recording of the meeting below:</p>
+            <audio controls>
+                <source src="meeting-audio-placeholder.mp3" type="audio/mpeg">
+            </audio>
+        </section>
+
+        <hr>
+
+        <section id="action-items">
+            <h2>Team Task Assignment</h2>
+            <form action="#" method="POST">
+                <fieldset>
+                    <legend><b>Assign New Task</b></legend>
+
+                    <label for="task-name">What needs to be done?</label>
+                    <input type="text" id="task-name" name="task-name" placeholder="e.g., Add Checkout" required>
+                    <br><br>
+
+                    <label for="due-date">Due Date:</label>
+                    <input type="date" id="due-date" name="due-date">
+                    <br><br>
+
+                    <p><strong>Assigned Team</strong></p>
+                    <input type="radio" id="dept-dev" name="department" value="development">
+                    <label for="dept-dev">Development Team</label><br>
+                    <input type="radio" id="dept-design" name="department" value="design">
+                    <label for="dept-design">Design Team</label><br>
+                    <input type="radio" id="dept-qa" name="department" value="qa">
+                    <label for="dept-qa">App Testers</label>
+                    <br><br>
+
+                    <label for="priority">Priority Level:</label>
+                    <select id="priority" name="priority">
+                        <option value="low">Low</option>
+                        <option value="medium" selected>Medium</option>
+                        <option value="high">High</option>
+                    </select>
+                    <br><br>
+
+                    <label for="feature-tag">What part of the app is this? (Type to Search):</label>
+                    <input list="features" id="feature-tag" name="feature-tag" placeholder="Select feature...">
+                    <datalist id="features">
+                        <option value="Mobile Ordering">
+                        <option value="Coffee Bean Inventory">
+                        <option value="Loyalty Points">
+                        <option value="Paying for stuff">
+                    </datalist>
+                    <br><br>
+
+                    <input type="checkbox" id="urgent" name="urgent" value="yes">
+                    <label for="urgent"><em>Flag as critical feature</em></label>
+                    <br><br>
+
+                    <label for="notes">Additional Comments:</label><br>
+                    <textarea id="notes" name="notes" rows="4" cols="40" placeholder="Any extra details..."></textarea>
+                    <br><br>
+
+                    <button type="submit">Submit Task Assignment</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <hr>
+        <p><strong>Project Brew</strong> - Internal </p>
+        <p><em>&copy; 2026 Tech Solutions Agency</em></p>
+    </footer>
+
+</body>
+</html>
